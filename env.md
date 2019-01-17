@@ -62,30 +62,30 @@ GOPATH允许多个目录，当有多个目录时，请注意分隔符，多个�
 
 1. 代码目录结构  
 GOPATH 下的 src 目录就是接下来开发程序的主要目录，所有的源码都是放在这个目录下面，那么一般的做法就是一个目录一个项目，例如: `$GOPATH/src/hello` 表示 hello 这个应用包或可执行应用，这个根据package是main还是其他来决定，main就是可执行应用，其他就是应用包。
-```
-go_project     // go_project为GOPATH目录
-  -- bin
-     -- myApp1  // 编译生成
-     -- myApp2  // 编译生成
-     -- myApp3  // 编译生成
-  -- pkg
-  -- src
-     -- myApp1     // project1
-        -- models
-        -- controllers
-        -- others
-        -- main.go 
-     -- myApp2     // project2
-        -- models
-        -- controllers
-        -- others
-        -- main.go 
-     -- myApp3     // project3
-        -- models
-        -- controllers
-        -- others
-        -- main.go
-```
+    ```
+    go_project     // go_project为GOPATH目录
+      -- bin
+         -- myApp1  // 编译生成
+         -- myApp2  // 编译生成
+         -- myApp3  // 编译生成
+      -- pkg
+      -- src
+         -- myApp1     // project1
+            -- models
+            -- controllers
+            -- others
+            -- main.go 
+         -- myApp2     // project2
+            -- models
+            -- controllers
+            -- others
+            -- main.go 
+         -- myApp3     // project3
+            -- models
+            -- controllers
+            -- others
+            -- main.go
+    ```
 
 ### 2.2 Windows安装配置go环境
 1. 首先下载linux下的go包：[https://golang.org/dl/](https://golang.org/dl/)
