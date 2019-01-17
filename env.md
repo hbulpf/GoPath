@@ -28,7 +28,7 @@ GOPATH允许多个目录，当有多个目录时，请注意分隔符，多个�
 
 1. go install   
 `go install` 会生成可执行文件直接放到bin目录下。如果是一个普通的包，会被编译生成到pkg目录下该文件是.a结尾。   
-注意: 如果设置了 `$GOBIN` 环境变量，生成的可执行文件就会放在 `$GOBIN` 目录下。如果没有设置 `$GOBIN` 环境变量,生成的可执行文件就会放在 `$GOPATH\bin` 目录下(此时默认 `$GOPATH\bin` 为 `$GOBIN`)。如果需要执行这些可执行文件,就要把 `$GOBIN` 或者 `$GOPATH\bin` 加入到 `$PATH` 中。
+注意: 如果设置了 `$GOBIN` 环境变量，生成的可执行文件就会放在 `$GOBIN` 目录下。如果没有设置 `$GOBIN` 环境变量,生成的可执行文件就会放在 `$GOPATH\bin` 目录下(此时默认 `$GOPATH\bin` 为 `$GOBIN`)。如果需要执行这些可执行文件,就要把 `$GOBIN` 或 `$GOPATH\bin` 加入到 `$PATH` 中。
 
 1. go clean -i  
 `go clean -i` 会清理 `$GOBIN` 和 项目当前目录下的二进制可执行文件。
@@ -61,7 +61,7 @@ GOPATH允许多个目录，当有多个目录时，请注意分隔符，多个�
     ```
 
 1. 代码目录结构  
-GOPATH 下的 src 目录就是接下来开发程序的主要目录，所有的源码都是放在这个目录下面，那么一般的做法就是一个目录一个项目，例如: `$GOPATH/src/hello` 表示 hello 这个应用包或者可执行应用，这个根据package是main还是其他来决定，main的话就是可执行应用，其他的话就是应用包。
+GOPATH 下的 src 目录就是接下来开发程序的主要目录，所有的源码都是放在这个目录下面，那么一般的做法就是一个目录一个项目，例如: `$GOPATH/src/hello` 表示 hello 这个应用包或可执行应用，这个根据package是main还是其他来决定，main就是可执行应用，其他就是应用包。
 ```
 go_project     // go_project为GOPATH目录
   -- bin
