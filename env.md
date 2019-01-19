@@ -100,17 +100,21 @@ GOPATH 下的 src 目录就是接下来开发程序的主要目录，所有的�
 1. 首先下载linux下的go包：[https://golang.org/dl/](https://golang.org/dl/)
 2. 下载之后解压并移动到 /usr/local/go 也就是GOROOT
     ```
-    tar -zxvf go1.9.5.linux-amd64.tar.gz 
-    mv  ./go /usr/local/
+    tar -zxvf go1.9.5.linux-amd64.tar.gz -C /usr/local/
     ```
-3. 设置GOPATH，还有PATH环境变量
+3. 设置GOPATH，添加PATH环境变量 `vi /etc/profile`
     ```
-    export GOROOT=/usr/local/go #设置为go安装的路径
-    export GOPATH=$HOME/gocode #默认安装包的路径
-    export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export GOROOT="/usr/local/go"
+export GOPATH="$HOME/gocode"
+export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
     ```
 
-4. 查看 go 环境
+4. 生效 sbt 环境变量
+```
+source /etc/profile
+```
+
+5. 查看 go 环境
     ```
     go env
     ```
