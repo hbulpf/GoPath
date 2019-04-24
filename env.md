@@ -20,15 +20,20 @@ GOPATH允许多个目录，当有多个目录时，请注意分隔符，多个�
 1. `$GOBIN`
 执行 `go install` 会在 `$GOBIN` 目录下生成项目的二进制可执行文件。
 
-1. go get   
-`go install` 会做两件事：1. 从远程下载需要用到的包 ; 2. 执行go install
 
 1. go build   
 在project目录下执行 `go build` 会在当前目录下生成项目的二进制可执行文件。
 
+1. go run
+相当于先执行 `go build` , 再执行 生成的二进制可执行文件。
+
+1. go get   
+`go get` 会做两件事：1. 从远程下载需要用到的包 ; 2. 执行go install
+
+
 1. go install   
 `go install` 会生成可执行文件直接放到bin目录下。如果是一个普通的包，会被编译生成到pkg目录下该文件是.a结尾。   
-注意: 如果设置了 `$GOBIN` 环境变量，生成的可执行文件就会放在 `$GOBIN` 目录下。如果没有设置 `$GOBIN` 环境变量,生成的可执行文件就会放在 `$GOPATH\bin` 目录下(此时默认 `$GOPATH\bin` 为 `$GOBIN`)。如果需要执行这些可执行文件,就要把 `$GOBIN` 或 `$GOPATH\bin` 加入到 `$PATH` 中。
+注意: 如果设置了 `$GOBIN` 环境变量，生成的可执行文件就会放在 `$GOBIN` 目录下。如果没有设置 `$GOBIN` 环境变量,生成的可执行文件就会放在 `$GOPATH\bin` 。如果需要执行这些可执行文件,就要把 `$GOBIN` 或 `$GOPATH\bin` 加入到 `$PATH` 中。
 
 1. go clean -i  
 `go clean -i` 会清理 `$GOBIN` 和 项目当前目录下的二进制可执行文件。
@@ -100,7 +105,7 @@ GOPATH 下的 src 目录就是接下来开发程序的主要目录，所有的�
 1. 首先下载linux下的go包：[https://golang.org/dl/](https://golang.org/dl/)
 2. 下载之后解压并移动到 /usr/local/go 也就是GOROOT
     ```
-    tar -zxvf go1.9.5.linux-amd64.tar.gz -C /usr/local/
+    tar -zxvf go1.11.2.linux-amd64.tar.gz -C /usr/local/
     ```
 3. 设置GOPATH，添加PATH环境变量 `vi /etc/profile`
     ```
