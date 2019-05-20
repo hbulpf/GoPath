@@ -14,7 +14,7 @@ GOPATH允许多个目录，当有多个目录时，请注意分隔符，多个�
 
 1. `$GOPATH` 目录约定有三个子目录
     + `src` 存放源代码(比如：.go .c .h .s等)，按照golang默认约定。`go run` 、 `go install` 等命令的当前工作路径（即在此路径下执行上述命令）。
-    + `pkg` 编译时生成的中间文件（比如：.a），golang编译包时。
+    + `pkg` 编译时生成的中间文件（比如：.a），golang编译包时生成的库文件。
     + `bin` 编译后生成的可执行文件（为了方便，可以把此目录加入到 `$PATH` 变量中，如果有多个gopath，那么使用 `${GOPATH//://bin:}/bin` 添加所有的bin目录）
 
 1. `$GOBIN`
@@ -24,6 +24,15 @@ GOPATH允许多个目录，当有多个目录时，请注意分隔符，多个�
 1. go build   
 在project目录下执行 `go build` 会在当前目录下生成项目的二进制可执行文件。
 
+在指定文件夹生成二进制可执行文件
+```
+go build -o <存放二进制文件的目录>  <项目main目录>
+```
+
+如在`$GOPATH` 目录下执行
+```
+go build -o bin/app.exe src/app/main
+```
 1. go run
 相当于先执行 `go build` , 再执行 生成的二进制可执行文件。
 
@@ -73,7 +82,7 @@ GOPATH 下的 src 目录就是接下来开发程序的主要目录，所有的�
          -- myApp1  // 编译生成
          -- myApp2  // 编译生成
          -- myApp3  // 编译生成
-      -- pkg
+      -- pkg   //存放库文件
       -- src
          -- myApp1     // project1
             -- models
