@@ -1,3 +1,4 @@
+1. 下载 vscode go的插件
 ```
 go get -u -v github.com/nsf/gocode
 go get -u -v github.com/rogpeppe/godef
@@ -8,5 +9,6 @@ go get -u -v golang.org/x/tools/cmd/gorename
 go get -u -v github.com/tpng/gopkgs
 go get -u -v github.com/newhook/go-symbols
 go get -u -v golang.org/x/tools/cmd/guru
-go get -u github.com/derekparker/delve/cmd/dlv
+go get -u -v github.com/derekparker/delve/cmd/dlv
+go get -u -v github.com/ramya-rao-a/go-outline
 ```
