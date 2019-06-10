@@ -1,6 +1,7 @@
 1. 下载 vscode go的插件
 ```
-go get -u -v github.com/nsf/gocode
+#go get -u -v github.com/nsf/gocode
+go get -u -v github.com/mdempsky/gocode
 go get -u -v github.com/rogpeppe/godef
 go get -u -v github.com/golang/lint/golint
 go get -u -v github.com/lukehoban/go-outline

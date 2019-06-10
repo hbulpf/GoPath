@@ -118,15 +118,15 @@ GOPATH 下的 src 目录就是接下来开发程序的主要目录，所有的�
     ```
 3. 设置GOPATH，添加PATH环境变量 `vi /etc/profile`
     ```
-export GOROOT="/usr/local/go"
-export GOPATH="$HOME/gopath"
-export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
+    export GOROOT="/usr/local/go"
+    export GOPATH="$HOME/gopath"
+    export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
     ```
 
 4. 生效 sbt 环境变量
-```
-source /etc/profile
-```
+    ```
+    source /etc/profile
+    ```
 
 5. 查看 go 环境
     ```
