@@ -123,7 +123,7 @@ GOPATH 下的 src 目录就是接下来开发程序的主要目录，所有的�
     export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
     ```
 
-4. 生效 sbt 环境变量
+4. 生效 GO 环境变量
     ```
     source /etc/profile
     ```
