@@ -9,6 +9,9 @@
 3. go 命令
    1. [go test](./cmd/gotest.md)
 
+## 学习资料参考
+
+1. [系统学习Go语言]( http://c.biancheng.net/golang/intro/ )
 
 ----------------------------------------
 
@@ -18,8 +21,7 @@
 
 **友情贡献**
 
-@[**RunAtWorld**](http://www.github.com/RunAtWorld)  &nbsp;  @[**Clock966**](https://github.com/Clock966)  &nbsp;  @[**persuez**](https://github.com/persuez) &nbsp; 
-@[**iceyung**](https://github.com/iceyung)
+@[**RunAtWorld**](http://www.github.com/RunAtWorld)  &nbsp;  @[**Clock966**](https://github.com/Clock966)  &nbsp;  @[**persuez**](https://github.com/persuez) &nbsp; @[**iceyung**](https://github.com/iceyung)
 
 ##### 如果觉得还不错，关注公众号获取更多优质文章 ~
 ![微信搜一搜  四方云和](https://images.gitee.com/uploads/images/2020/0417/221836_0afeddb2_927522.jpeg)
