@@ -6,7 +6,8 @@
 2. Goland使用
     * [Goland基本使用](./GoLandUsage.md)
     * [Goland快捷键](./GoLandShortCuts.md)
-
+3. go 命令
+   1. [go test](./cmd/gotest.md)
 
 
 ----------------------------------------
