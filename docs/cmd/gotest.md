@@ -8,9 +8,9 @@ go 语言的test代码写起来和运行起来都相对简单。
 
 ```
 //执行所有测试函数
-go test ./main/testMe.go ./main/testMe_test.go -v 
+go test ./golearning/testMe.go ./golearning/testMe_test.go -v 
 //执行指定函数的测试函数
-go test ./main/testMe.go ./main/testMe_test.go -run='s1' -v  
+go test ./golearning/testMe.go ./golearning/testMe_test.go -run='s1' -v  
 ```
 
 

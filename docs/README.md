@@ -2,17 +2,17 @@
 
 ## GoLang 环境
 
-1. [GoLang 环境搭建](./docs/env.md)
+1. [GoLang 环境搭建](./env.md)
 2. Goland使用
-    * [Goland基本使用](./docs/GoLandUsage.md)
-    * [Goland快捷键](./docs/GoLandShortCuts.md)
+    * [Goland基本使用](./GoLandUsage.md)
+    * [Goland快捷键](./GoLandShortCuts.md)
 3. go 命令
-   1. [go test](./docs/cmd/gotest.md)
+   1. [go test](./cmd/gotest.md)
 
 ## 学习资料参考
 
-1. [Go语言中文网](https://studygolang.com/)
-2. [系统学习Go语言](http://c.biancheng.net/golang/intro/)
+1. [系统学习Go语言]( http://c.biancheng.net/golang/intro/)
+2. https://studygolang.com/
 
 ----------------------------------------
 
