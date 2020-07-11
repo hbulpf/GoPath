@@ -8,6 +8,7 @@
     * [Goland快捷键](./docs/GoLandShortCuts.md)
 3. go 命令
    1. [go test](./docs/cmd/gotest.md)
+4. [使用镜像](./docs/go_proxy.md)
 
 ## 学习资料参考
 
