@@ -11,7 +11,8 @@
 
 ## 学习资料参考
 
-1. [系统学习Go语言]( http://c.biancheng.net/golang/intro/ )
+1. [系统学习Go语言]( http://c.biancheng.net/golang/intro/)
+2. https://studygolang.com/
 
 ----------------------------------------
 
